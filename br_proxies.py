@@ -13,7 +13,7 @@ ip_list = ['69.175.58.62:80', '108.178.5.194:80', '165.231.12.159:80', '173.0.62
 
 def main(br):
     ip_port = choice(ip_list)
-    br.set_proxies({"http": "vinku:india123@"+ip_port})
+    br.set_proxies({"http": "username:password@"+ip_port})
                 #"ftp": "http://vinku:india123@"+ip_port,
                 #})
     

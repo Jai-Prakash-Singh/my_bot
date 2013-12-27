@@ -17,7 +17,7 @@ def main3(fpage,driver,captcha,form):
       if str(control.type) == "text" and str(control.name) =="email":
           e =str(control.name)
           elem = driver.find_element_by_name(e)
-          elem.send_keys("jp213@ymail.com")
+          elem.send_keys("email.com")
       elif str(control.type)=="text":
           t =str(control.name)
           elem = driver.find_element_by_name(t)
@@ -29,7 +29,7 @@ def main3(fpage,driver,captcha,form):
       elif str(control.type) =="password":
           p =str(control.name)
           elem = driver.find_element_by_name(p)
-          elem.send_keys("playboy13")
+          elem.send_keys("passwrod")
       elif str(control.type)=="checkbox":
           c =str(control.name)
           elem = driver.find_element_by_name(c)
