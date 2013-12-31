@@ -11,11 +11,14 @@ ip_list = ['69.175.58.62:80', '108.178.5.194:80', '165.231.12.159:80', '173.0.62
 
 #https://getfirebug.com/releases/firebug/1.11/
 
-def main(br):
+def main(link):
     ip_port = choice(ip_list)
+    br = Browser()
     br.set_proxies({"http": "username:password@"+ip_port})
                 #"ftp": "http://vinku:india123@"+ip_port,
                 #})
+    br.open(link)
+    return br
     
 
 if __name__=="__main__":
